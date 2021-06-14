@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/dinh_layout_header"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgProfile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/man"
+                app:civ_border_color="#FF000000"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Trần Cảnh Dinh"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_margin="@dimen/dp20"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvShipment"
+                    android:textSize="@dimen/text_default"
+                    android:textColor="@color/black"
+                    android:text="Chuyến: Hồ Chí Minh - Huế"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:id="@+id/tvTimeTotal"
+                    android:textSize="@dimen/text_default"
+                    android:textColor="@color/black"
+                    android:text="Thời gian: 1h30p"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:id="@+id/tvTimeStart"
+                    android:textSize="@dimen/text_default"
+                    android:textColor="@color/black"
+                    android:text="Lúc đi: 10h20"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:id="@+id/tvTimeEnd"
+                    android:textSize="@dimen/text_default"
+                    android:textColor="@color/black"
+                    android:text="Lúc đến: 1h30"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <baseproject.tran.canhdinh.widgets.roundview.RoundLinearLayout
+           android:id="@+id/btnSubmit"
+           app:rv_cornerRadius="8dp"
+           android:layout_margin="@dimen/dp20"
+           android:layout_alignParentBottom="true"
+           app:rv_backgroundColor="@color/color_danger_active"
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="55dp">
+           <TextView
+               android:id="@+id/tvSubmit"
+               android:layout_marginLeft="@dimen/dp20"
+               android:layout_weight="1"
+               android:layout_gravity="center"
+               android:textSize="20sp"
+               android:textColor="@color/white"
+               android:text="Hoàn thành"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <ImageView
+               android:padding="10dp"
+               android:layout_gravity="center"
+               android:src="@drawable/ic_right_arrow"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </baseproject.tran.canhdinh.widgets.roundview.RoundLinearLayout>
+   </LinearLayout>
+
+</RelativeLayout>

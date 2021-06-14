@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<baseproject.tran.canhdinh.widgets.roundview.RoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btnSubmit"
+        app:rv_cornerRadius="8dp"
+        android:layout_margin="@dimen/dp20"
+        android:layout_alignParentBottom="true"
+        app:rv_backgroundColor="@color/color_success_"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="55dp">
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Bắt đầu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </baseproject.tran.canhdinh.widgets.roundview.RoundLinearLayout>
